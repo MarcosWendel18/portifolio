@@ -1,83 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/xicon">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
-    <title>PORTIFÓLIO</title>
-</head>
-<body>
-    
-    <nav id="nav">
-        <h1 id="titulo">Marcos</h1>
-        <ul class="menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>                    <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <header>
-        <picture>
-            <source media="(max-width: 650px)" srcset="imagens/foto-perfil-180x180.png">
-            <img id="perfil" src="imagens/foto-perfil.png" alt="perfil">
-        </picture>
-        <div id="hero-text">
-            <h1>Olá! eu sou <span id="nome">Marcos Wendel</span><h1>
-            <h2>Desenvolvedor front-end</h2>
-        </div>
-        <nav id="social">
-            <a href="https://github.com/MarcosWendel18" target="_blank"><img class="link" src="imagens/github_red.png" alt="GitHub"></a>
-            <a href=""><img class="link" src="imagens/Linkedin.png" alt="Linkedin"></a>
-            <a href=""><img class="link" src="imagens/Instagram.png" alt="Istagram"></a>
-            <a href=""><img class="link" src="imagens/email.png" alt="Email"></a>
-        </nav>
-    </header>
 
-        <main>
-            
-            <h2>Meu perfil</h2>
-            <div id="principal">
-                <div class="pri">
-                    <h3>Sobre mim</h3>
-                    <p>Tenho 19 anos e atualmente estou cursando Análise e desenvlvimento de Sistemas no Centro universitário do Centro-Oeste. Estou estudando com foco em programação front-end usando principalmente das linguagens HTML, CSS e Java Script para o desenvolvimento de sistemas.</p>
-                </div>
-                <div class="pri">
-                    <h3>Objetivos</h3>
-                    <p>Busco iniciar minha atuação na área de tecnologia a fim de por em pratica todo o conhecimento que adquiri até o presente momento além de continnuar minha jornada de aprendizado para aprimorar minhas habilidades profissionais.</p>
-                </div>
-                <div class="pri">
-                    <h3>Competências</h3>
-                    <p>Estou em busca constante por aprendizado, por isso busco ser persistente e estar focado para cumprir meus objeivos, procuro me organizar para poder ter um bom equilíbrio entre vida pessoal, acadêmica e profissional..</p>
-                </div>
-            </div>
-        </main>
-        <div id="academic">
-            <div class="sec">
-                <h3>Formação acadêmica</h3>
-                <p>Cursando ensino superior no Centro Universitário de Desenvolvimento do Centro-Oeste (UNIDESC), no 4º semestre do curso de Análise e desenvolvimento de sistemas.</p>
-            </div>
-            <div class="sec">
-                <h3>Habilidades</h3>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Java Script</li>
-                    <li>Java Básico</li>
-                    <li>Java POO</li>
-                    <li>Exel básico
-                    <li>Excel intermediário</li>
-                </ul>
-            </div>
-            <div class="sec">
-                <h3>Projetos</h3>
-                <h4>Projeto A</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quisquam commodi qui inventore! Beatae totam voluptatum, similique corporis ut quod dolores, nihil laborum hic id numquam molestias ipsam, illum minus.</p>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <title>Portfólio | Marcos Wendel</title>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Marcos</h1>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        ☰
+      </button>
+
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#education">Educação</a></li>
+          <li><a href="#projects">Projetos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <picture>
+        <source media="(max-width: 650px)" srcset="imagens/foto-perfil-180x180.png" />
+        <img class="profile-img" src="imagens/foto-perfil.png" alt="Foto de perfil de Marcos Wendel" />
+      </picture>
+
+      <div class="social-links">
+        <h2 class="hero-intro">Olá! Eu sou <span class="nome">Marcos Wendel</span></h2>
+        <h3 class="subtitle"><span id="subtitle"></span></h3>
+        <p></p>
+        <a href="https://github.com/MarcosWendel18" target="_blank">
+          <img src="imagens/logo-github.png" alt="GitHub" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="imagens/logo-linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="imagens/logo-instagram.png" alt="Instagram" />
+        </a>
+        <a href="mailto:seuemail@exemplo.com">
+          <img src="imagens/logo-email.png" alt="E-mail" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-texto">
+        <h2 class="section-title">Sobre mim</h2>
+        <div class="cards">
+          <article class="card">
+            <h3 class="section-subtitle">Sobre mim</h3>
+            <p>Tenho 19 anos e comecei recentemente minha empreitada na área da programação, estou estudando no Centro
+              Universitário de Desenvolvimento do Centro-Oeste (<strong>UNIDESC</strong>), focando meu aprendizado para
+              aréa de front-end buscando criar interfaces que sejam intuitivas, dinâmicas e agradáveis para os usuários.
+            </p>
+          </article>
+          <article class="card">
+            <h3 class="section-subtitle">Objetivos</h3>
+            <p>Atualmente busco a oportunidade de me inserir na área de tecnologia a fim de colocar em prática o
+              conhecimento que tenho adquirido e continuar aprimorando minhas habilidades profissionais.</p>
+          </article>
+          <article class="card">
+            <h3 class="section-subtitle">Competências</h3>
+            <p>Sou persistente e organizado, busco equilíbrio entre vida pessoal, acadêmica e profissional, mantendo o
+              foco no aprendizado contínuo.</p>
+          </article>
         </div>
+      </div>
+
+      <div class="left-ilustration">
+        <img id="ilustration" src="imagens/ilustration-about.png" alt="computer-ilustration">
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="right-ilustration">
+        <img src="imagens/ilustration-skills.png" alt="computer-ilustration">
+      </div>
+
+      <div class="section-texto">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="info-grid">
+          <article id="habilidades" class="info-card">
+            <h3 class="skills-subtitle">Linguagens</h3>
+            <ul>
+              <li><img src="imagens/logo-html.png" alt="LinkedIn" /></li>
+              <li><img src="imagens/logo-css.png" alt="LinkedIn" /></li>
+              <li><img src="imagens/logo-javascript.png" alt="LinkedIn" /></li>
+              <li><img src="imagens/logo-java.png" alt="LinkedIn" /></li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3 class="skills-subtitle">Frameworks e ferramentas</h3>
+            <ul>
+              <li>GitHub</li>
+              <li>NodeJs</li>
+              <li>VS Code</li>
+              <li>IntelliJ</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-texto">
+        <h2 id="education" class="section-title">Educação</h2>
+        <div class="info-grid">
+          <article class="card">
+            <h3 class="section-subtitle">Formação Acadêmica</h3>
+            <p>Atualmente estou cursando o 4° semestre de Sistemas da Informação no Centro Universitário de
+              Desenvolvimeto do Centro-Oeste ( <strong>UNIDESC</strong> )</p>
+          </article>
+        </div>
+      </div>
+
+      <div class="left-ilustration">
+        <img src="imagens/ilustration-education1.png" alt="education-ilustration">
+      </div>
+    </section>
+
+
+
+    <section id="projects" class="section">
+      <div class="right-ilustration">
+        <img src="imagens/ilustration-projects.png" alt="computer-ilustration">
+      </div>
+
+      <div class="section-texto">
+        <h2 class="section-title">Projetos</h2>
+        <article class="info-card">
+          <h4>Projeto A</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam commodi qui inventore!</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato">
+    <p>© 2025 Marcos Wendel - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <script>
+    var typed = new Typed("#subtitle", {
+      strings: ["Web Developer", "Back-End Developer"],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true
+    })
+  </script>
 
 </body>
 </html>
