@@ -7,7 +7,8 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 1remx;
+  font-size: 1rem;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -27,6 +28,8 @@ body {
   color: white;
   line-height: 1.6;
   padding-top: 4rem;
+  overflow-x: hidden;
+  font-weight: 100;
 }
 
 :root {
@@ -138,6 +141,8 @@ h1, h3{
 /* SEÇÕES */
 
 .section {
+  max-width: 100vw;
+  overflow-x: hidden;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -202,6 +207,38 @@ h1, h3{
     padding: 0;
   }
 
+  /* SEÇÂO PROJETOS */
+
+  .project-card{
+    display: flex;
+  }
+
+  .p-info-card{
+    text-align: center;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+  }
+
+  .p-card-title{
+    padding-bottom: 1rem;
+  }
+
+  .p-card-content{
+    background: url("imagens/project-ilustration.png") center no-repeat;
+    width: 17rem;
+    height: 17rem;
+    display: flex;
+    align-content: center;
+    border: 0.2rem solid var(--cor-principal);
+    border-radius: 1rem;
+    padding: 3rem 1rem;
+    direction: column;
+  }
+
+  .p-info-card:hover{
+    transform: scale(1.1);
+  }
+
 .skills-subtitle {
   text-align: center;
   padding-bottom: 1rem ;
@@ -209,13 +246,20 @@ h1, h3{
 
 /* ILUSTRAÇÕES */
 
-.left-illustration,
-.right-illustration {
+.left-ilustration,
+.right-ilustration {
   opacity: 1;
   transform: translateX(0);
   transition: transform 0.4s ease-out, opacity 0.4s ease-out;
   max-width: 100%;
   will-change: transform;
+}
+
+.left-ilustration img,
+.right-ilustration img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 /* RODAPÉ */
@@ -229,7 +273,7 @@ footer {
 
 /* RESPONSIVIDADE GERAL */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .hero-content {
     flex-direction: column;
     text-align: center;
@@ -257,6 +301,10 @@ footer {
     max-width: 24rem;
     width: 100%;
     height: auto;
+  }
+
+  .project-card{
+    flex-direction: column;
   }
 }
 
@@ -292,6 +340,14 @@ footer {
 
   .section-title {
     font-size: 1.6rem;
+  }
+
+  .project-card{
+    flex-direction: column;
+  }
+
+  .project-card{
+    flex-direction: column;
   }
 }
 
