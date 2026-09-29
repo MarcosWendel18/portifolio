@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Marcos Wendel, estudante de Sistemas de Informação com foco em Power BI, Análise de Dados e Business Intelligence." />
   <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="index.css" />
   <title>Portfólio | Marcos Wendel</title>
 </head>
@@ -18,174 +18,274 @@
 <body>
   <header class="navbar">
     <div class="nav-container">
-      <h1 class="logo">Marcos</h1>
+      <a class="logo" href="#home" aria-label="Ir para o início">Marcos Wendel</a>
 
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
         ☰
       </button>
 
-
-      <nav class="nav-menu" id="nav-menu">
+      <nav class="nav-menu" id="nav-menu" aria-label="Navegação principal">
         <ul>
-          <li><a href="#about">Sobre mim</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#education">Educação</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Conhecimentos</a></li>
           <li><a href="#projects">Projetos</a></li>
+          <li><a href="#education">Formação</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-
-      <picture>
-        <source media="(max-width: 650px)" srcset="imagens/foto-perfil-180x180.png" />
-        <img class="profile-img" src="imagens/foto-perfil.png" alt="Foto de perfil de Marcos Wendel" />
-      </picture>
-
-      <div class="social-links">
-        <h2 class="hero-intro">Olá! Eu sou <span class="nome">Marcos Wendel</span></h2>
-        <h3 class="subtitle"><span id="subtitle"></span></h3>
-        <p></p>
-        <a href="https://github.com/MarcosWendel18" target="_blank">
-          <img src="imagens/logo-github.png" alt="GitHub" />
-        </a>
-        <a href="https://www.linkedin.com/in/marcos-wendel-luz-magalh%C3%A3es-846a542b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-          <img src="imagens/logo-linkedin.png" alt="LinkedIn" />
-        </a>
-        <a href="https://www.instagram.com/marcoswendelluz/" target="_blank">
-          <img src="imagens/logo-instagram.png" alt="Instagram" />
-        </a>
-        <a href="mailto:marcoswl2006@gmail.com">
-          <abbr title="marcoswl2006@gmail.com"><img src="imagens/logo-email.png" alt="E-mail" /></abbr>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <main>
-    <section id="about" class="section">
-      <div class="section-texto">
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Sistemas de Informação • Dados & Business Intelligence</p>
+          <h1>Olá, eu sou <span>Marcos Wendel.</span></h1>
+          <p class="hero-role">Estudante de Sistemas de Informação com foco em <strong>Power BI, Análise de Dados e Business Intelligence.</strong></p>
+          <p class="hero-text">Transformo dados em informações visuais que ajudam a identificar padrões, acompanhar indicadores e apoiar decisões.</p>
+
+          <div class="hero-actions">
+            <a class="primary-button" href="#projects">Ver projetos</a>
+            <a class="secondary-button" href="#contato">Entrar em contato</a>
+          </div>
+
+          <div class="social-links" aria-label="Redes sociais e contato">
+            <a href="https://github.com/MarcosWendel18" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="imagens/logo-github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/marcos-wendel-luz-magalh%C3%A3es-846a542b8" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="imagens/logo-linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/marcoswendelluz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="imagens/logo-instagram.png" alt="Instagram">
+            </a>
+            <a href="mailto:marcoswl2006@gmail.com" aria-label="Enviar e-mail para Marcos Wendel">
+              <img src="imagens/logo-email.png" alt="E-mail">
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-data-card" aria-label="Resumo do foco profissional">
+          <div class="data-card-top">
+            <span class="status-dot"></span>
+            <span>FOCO ATUAL</span>
+          </div>
+          <div class="data-card-title">Data & BI</div>
+          <div class="mini-chart" aria-hidden="true">
+            <span style="height: 34%"></span>
+            <span style="height: 52%"></span>
+            <span style="height: 44%"></span>
+            <span style="height: 68%"></span>
+            <span style="height: 60%"></span>
+            <span style="height: 86%"></span>
+            <span style="height: 76%"></span>
+          </div>
+          <div class="data-card-footer">
+            <span>Power BI</span>
+            <span>SQL</span>
+            <span>DAX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-about">
+      <div class="section-heading">
+        <p class="section-kicker">PERFIL</p>
         <h2 class="section-title">Sobre mim</h2>
-        <div class="cards">
-          <article class="card">
-            <h3 class="section-subtitle">Sobre mim</h3>
-            <p>Tenho 19 anos e comecei recentemente minha empreitada na área da programação, estou estudando no Centro
-              Universitário de Desenvolvimento do Centro-Oeste (<strong>UNIDESC</strong>), focando meu aprendizado para
-              aréa de front-end e <strong>desenvolvimento web,</strong> buscando criar interfaces que sejam intuitivas, dinâmicas e agradáveis para os usuários.
-            </p>
-          </article>
-          <article class="card">
-            <h3 class="section-subtitle">Objetivos</h3>
-            <p>Atualmente busco a oportunidade de me inserir na área de tecnologia a fim de colocar em prática o
-              conhecimento que tenho adquirido e continuar aprimorando minhas habilidades profissionais.</p>
-          </article>
-          <article class="card">
-            <h3 class="section-subtitle">Competências</h3>
-            <p>Sou persistente e organizado, busco equilíbrio entre vida pessoal, acadêmica e profissional, mantendo o
-              foco no aprendizado contínuo.</p>
+      </div>
+
+      <div class="about-layout">
+        <div class="section-texto">
+          <article class="card about-main-card">
+            <h3 class="section-subtitle">Dados, tecnologia e aprendizado contínuo</h3>
+            <p>Sou estudante de <strong>Sistemas de Informação</strong>, interessado em tecnologia, análise de dados e Business Intelligence.</p>
+            <p>Atualmente direciono meus estudos para <strong>Power BI, SQL, Power Query, DAX e visualização de dados</strong>, buscando desenvolver a capacidade de transformar dados brutos em informações claras e úteis para análise.</p>
+            <p>Também possuo conhecimentos em desenvolvimento de software, o que contribui para uma visão mais ampla sobre tecnologia, sistemas e soluções digitais.</p>
           </article>
         </div>
-      </div>
 
-      <div class="left-ilustration">
-        <img id="ilustration" src="imagens/ilustration-about.png" alt="computer-ilustration">
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="right-ilustration">
-        <img src="imagens/ilustration-skills.png" alt="computer-ilustration">
-      </div>
-
-      <div class="section-texto">
-        <h2 class="section-title">Habilidades</h2>
-        <div class="info-grid">
-          <article id="habilidades" class="info-card">
-            <h3 class="skills-subtitle">Linguagens</h3>
-            <ul>
-              <li><img src="imagens/logo-html.png" alt="LinkedIn" /></li>
-              <li><img src="imagens/logo-css.png" alt="LinkedIn" /></li>
-              <li><img src="imagens/logo-javascript.png" alt="LinkedIn" /></li>
-              <li><img src="imagens/logo-java.png" alt="LinkedIn" /></li>
-            </ul>
+        <div class="about-highlights">
+          <article class="highlight-card">
+            <span class="highlight-icon">◈</span>
+            <h3>Análise</h3>
+            <p>Exploração de dados para encontrar padrões, tendências e informações relevantes.</p>
           </article>
-          <article class="info-card">
-            <h3 class="skills-subtitle">Frameworks e ferramentas</h3>
-            <ul>
-              <li>GitHub</li>
-              <li>NodeJs</li>
-              <li>VS Code</li>
-              <li>IntelliJ</li>
-            </ul>
+          <article class="highlight-card">
+            <span class="highlight-icon">▦</span>
+            <h3>Visualização</h3>
+            <p>Construção de dashboards claros e organizados para facilitar a interpretação dos dados.</p>
+          </article>
+          <article class="highlight-card">
+            <span class="highlight-icon">↗</span>
+            <h3>Indicadores</h3>
+            <p>Estudo de métricas e KPIs para acompanhar resultados e apoiar decisões.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-texto">
-        <h2 id="education" class="section-title">Educação</h2>
-        <div class="info-grid">
-          <article class="card">
-            <h3 class="section-subtitle">Formação Acadêmica</h3>
-            <p>Atualmente estou cursando o 4° semestre de Sistemas da Informação no Centro Universitário de
-              Desenvolvimeto do Centro-Oeste ( <strong>UNIDESC</strong> )</p>
-          </article>
-        </div>
+    <section id="skills" class="section section-skills">
+      <div class="section-heading">
+        <p class="section-kicker">STACK</p>
+        <h2 class="section-title">Conhecimentos atuais</h2>
       </div>
 
-      <div class="left-ilustration">
-        <img src="imagens/ilustration-education1.png" alt="education-ilustration">
+      <div class="skills-layout">
+        <article class="skill-panel">
+          <div class="panel-heading">
+            <span class="panel-label">01</span>
+            <div>
+              <h3>Dados & Business Intelligence</h3>
+              <p>Conhecimentos que estou desenvolvendo e aplicando em projetos práticos.</p>
+            </div>
+          </div>
+
+          <div class="skill-tags">
+            <span>Power BI</span>
+            <span>SQL</span>
+            <span>Excel</span>
+            <span>Power Query</span>
+            <span>DAX</span>
+            <span>Visualização de Dados</span>
+            <span>KPIs</span>
+            <span>Modelagem de Dados</span>
+          </div>
+        </article>
+
+        <article class="skill-panel">
+          <div class="panel-heading">
+            <span class="panel-label">02</span>
+            <div>
+              <h3>Desenvolvimento</h3>
+              <p>Conhecimentos complementares adquiridos durante a graduação.</p>
+            </div>
+          </div>
+
+          <div class="skill-tags secondary-tags">
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>Node.js</span>
+            <span>VS Code</span>
+          </div>
+        </article>
       </div>
     </section>
 
-
-
-    <section id="projects" class="section">
-      <div class="right-ilustration">
-        <img src="imagens/ilustration-projects.png" alt="computer-ilustration">
-      </div>
-
-      <div class="p-section-texto">
+    <section id="projects" class="section section-projects">
+      <div class="section-heading">
+        <p class="section-kicker">PORTFÓLIO</p>
         <h2 class="section-title">Projetos</h2>
-        <div class="project-card">
-          <article class="p-info-card">
-            <h4 class="p-card-title">Projeto A</h4>
-            <div class="p-card-content">
+        <p class="section-description">Projetos acadêmicos desenvolvidos para praticar análise de dados, construção de dashboards e aplicação de conceitos de Business Intelligence.</p>
+      </div>
+
+      <div class="featured-project">
+        <div class="project-number">PROJETO PRINCIPAL</div>
+        <div class="featured-project-content">
+          <div class="project-visual project-visual-large">
+            <img src="https://raw.githubusercontent.com/MarcosWendel18/power-bi-analise-folha-pagamento/main/pcmbi-visao-geral.jpg" alt="Dashboard de visão geral da análise da folha de pagamento no Power BI" loading="lazy">
+            <span>POWER BI • BUSINESS INTELLIGENCE</span>
+          </div>
+
+          <div class="project-body featured-body">
+            <p class="project-context">PROJETO ACADÊMICO • BASE DE DADOS PÚBLICA</p>
+            <h3>Análise da Folha de Pagamento com Power BI</h3>
+            <p>Projeto de Business Intelligence desenvolvido para transformar dados públicos de folha de pagamento em um relatório interativo. A análise contempla servidores, órgãos, cargos, tipos de vínculo, valores da folha e evolução temporal.</p>
+
+            <div class="project-details">
+              <div>
+                <strong>O que foi praticado</strong>
+                <span>Tratamento e preparação de dados, modelagem, medidas e análise temporal.</span>
+              </div>
+              <div>
+                <strong>Recursos</strong>
+                <span>Power BI, Power Query, DAX, filtros, segmentações e dashboards interativos.</span>
+              </div>
             </div>
-          </article>
-          <article class="p-info-card">
-            <h4 class="p-card-title">Projeto B</h4>
-            <div class="p-card-content">
+
+            <div class="project-tags"><span>Power BI</span><span>Power Query</span><span>DAX</span><span>Modelagem</span></div>
+
+            <div class="project-actions">
+              <a class="project-button" href="https://github.com/MarcosWendel18/power-bi-analise-folha-pagamento" target="_blank" rel="noopener noreferrer">Ver no GitHub ↗</a>
+              <a class="project-text-link" href="https://github.com/MarcosWendel18/power-bi-analise-folha-pagamento/blob/main/README.md" target="_blank" rel="noopener noreferrer">Documentação</a>
             </div>
-          </article>
-          <article class="p-info-card">
-            <h4 class="p-card-title">Projeto C</h4>
-            <div class="p-card-content">
-            </div>
-          </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-grid project-grid-secondary">
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-visual">
+            <img src="imagens/projetos/rh/workshop_RH_page-0002.jpg" alt="Dashboard de People Analytics desenvolvido no Power BI" loading="lazy">
+            <span>PEOPLE ANALYTICS</span>
+          </div>
+          <div class="project-body">
+            <p class="project-context">WORKSHOP ACADÊMICO • RH</p>
+            <h3>Workshop de Recursos Humanos</h3>
+            <p>Atividade acadêmica voltada à área de RH, utilizando dados tabulares para construir análises de colaboradores e indicadores relacionados a pessoas.</p>
+            <div class="project-tags"><span>Power BI</span><span>Excel</span><span>RH</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-visual">
+            <img src="imagens/projetos/marketing/Workshop_Marketing_page-0003.jpg" alt="Ilustração representando análise de dados para marketing" loading="lazy">
+            <span>MARKETING ANALYTICS</span>
+          </div>
+          <div class="project-body">
+            <p class="project-context">WORKSHOP ACADÊMICO • MARKETING</p>
+            <h3>Workshop de Marketing</h3>
+            <p>Atividade acadêmica utilizando dados de tabelas para explorar clientes, comportamento de compras e indicadores relacionados a campanhas de marketing.</p>
+            <div class="project-tags"><span>Power BI</span><span>Excel</span><span>Marketing</span></div>
+          </div>
+        </article>
+      </div>
+
+      <p class="projects-note"><strong>Em evolução:</strong> novos projetos serão adicionados conforme avanço meus estudos em análise de dados e Business Intelligence.</p>
+    </section>
+
+    <section id="education" class="section section-education">
+      <div class="section-heading">
+        <p class="section-kicker">FORMAÇÃO</p>
+        <h2 class="section-title">Educação</h2>
+      </div>
+
+      <div class="education-card">
+        <div class="education-mark">SI</div>
+        <div>
+          <p class="education-label">GRADUAÇÃO EM ANDAMENTO</p>
+          <h3>Sistemas de Informação</h3>
+          <p>Centro Universitário de Desenvolvimento do Centro-Oeste — <strong>UNIDESC</strong></p>
+          <p class="education-note">Formação em andamento, com conhecimentos em programação, banco de dados, engenharia de software e fundamentos de sistemas de informação, direcionando meus estudos para Análise de Dados e Business Intelligence.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer id="contato">
-    <p>© 2025 Marcos Wendel - Todos os direitos reservados.</p>
+    <div class="footer-content">
+      <div>
+        <p class="section-kicker">CONTATO</p>
+        <h2>Vamos conversar?</h2>
+        <p>Estou aberto a oportunidades, projetos e conexões na área de tecnologia e dados.</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:marcoswl2006@gmail.com">E-mail</a>
+        <a href="https://www.linkedin.com/in/marcos-wendel-luz-magalh%C3%A3es-846a542b8" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/MarcosWendel18" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Marcos Wendel. Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-  <script>
-    var typed = new Typed("#subtitle", {
-      strings: ["Web Developer", "Back-End Developer"],
-      typeSpeed: 100,
-      backSpeed: 50,
-      loop: true
-    })
-  </script>
-
 </body>
+
 </html>
